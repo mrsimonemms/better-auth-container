@@ -13,12 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import { betterAuth } from 'better-auth';
 
-export const config = {
-  log: {
-    level: process.env.LOG_LEVEL ?? 'info',
-  },
-  server: {
-    port: Number(process.env.SERVER_PORT ?? 3000),
-  },
-};
+export const auth = betterAuth({});
